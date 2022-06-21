@@ -1,0 +1,576 @@
+
+@font-face {
+	font-family:CircularStd-Bold;
+	src:url(../fonts/CircularStd-Bold.otf);
+}
+@font-face {
+	font-family:CircularStd-Medium;
+	src:url(../fonts/CircularStd-Medium.otf);
+}
+body {
+	font-family:CircularStd-Medium;
+	line-height: 1.5;
+	letter-spacing: -.4px;
+	color:rgba(34,46,58,.75);
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+}
+h1 {
+	font-size: 4.5rem;
+	line-height: 1.22;
+	letter-spacing: -.5px;
+	color:#222e3a;
+	font-family:CircularStd-Bold;
+}
+.vp-service-hero-text {
+	background-image: url(../images/hero-background.png);
+	background-size: 968px 508px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	padding: 5rem 0;
+}
+.subtitle-1 {
+	font-size: 1.5rem;
+	line-height: 1.67;
+	letter-spacing: -.2px;
+}
+.list-wrap {
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.list-check p {
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: -.1px;
+}
+.list-check p i {
+	padding-right:15px;
+	color:#1BCA57;
+}
+
+/*Search Area*/
+.vp-service-hero-text .vp-search-container {
+	max-width: 568px;
+	margin: 56px auto 0;
+	position: relative;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.vp-service-hero-text .vp-search-container input {
+	display: block;
+	width: 100%;
+	height: 72px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 36px;
+	padding: 20px 60px;
+	border: 1px solid #c7ceda;
+	-webkit-appearance: none;
+	color: #222e3a;
+	-webkit-transition: border .5s;
+	transition: border .5s;
+}
+.vp-service-hero-text .vp-search-container input:focus {
+	outline: 0;
+	border-color: #178a9e;
+}
+.vp-service-hero-text .vp-search-container .search {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 24px;
+	left: 32px;
+	pointer-events: none;
+	-webkit-transition: none;
+	transition: none;
+	opacity: .25;
+}
+
+/*Servers Table Area*/
+.vp-servers-countries .continent {
+	margin-top: 32px;
+}
+.vp-servers-countries h2 {
+	font-size: 1.75rem;
+	line-height: 1.29;
+	letter-spacing: -.3px;
+	padding: 32px 0;
+	margin: 0;
+}
+.vp-servers-countries .table-top{
+ 	position:sticky;
+ 	top: 0%;
+ 	background:#fff;
+ 	z-index: 5;
+ }
+.vp-servers-countries .table .head {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	background: #e8ebf0;
+	border-radius: 6px;
+	font-size: .75rem;
+	font-weight: 700;
+	line-height: 1.33;
+	color: rgba(34,46,58,.5);
+}
+.vp-servers-countries .table .cell.first {
+	 width: 30%;
+	 border-left: 0;
+	justify-content: flex-start;
+	text-align: left;
+}
+.vp-servers-countries .table .toggle {
+	display: flex;
+	width: 77.1%;
+}
+.flag {
+	display: inline-block;
+	width: 36px;
+	height: 24px;
+	background-image: url(../images/flags.png);
+	background-size: 36px 1968px;
+	margin-right:1rem;
+}
+.vp-servers-countries .table .toggle .cell {
+	width: 20%;
+}
+.vp-servers-countries .table .cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 16px;
+	height: 50px;
+	border-left: 1px solid rgba(34,46,58,.1);
+	padding-bottom: .5rem;
+}
+/*Table*/
+.vp-servers-countries .table .country {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid rgba(34,46,58,.1);
+	position: relative;
+}
+.vp-servers-countries .table-country.cell.first i {
+	color:rgba(34,46,58,.5);
+	font-size: 1rem;
+	position: absolute;
+	right: 20px;
+	transition:.5s;
+	display: none;
+}
+.servers-down-icon-rotate {
+    transform: rotate(180deg);
+}
+.vp-servers-countries .table .country .toggle .cell {
+	font-size: .875rem;
+	line-height: 1.71;
+	letter-spacing: -.3px;
+}
+.vp-servers-countries .table .check {
+	background-image: url(../images/check-green.png);
+	background-size: 16px 16px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.flag {
+	display: inline-block;
+	width: 36px;
+	height: 24px;
+	background-image: url(../images/flags.png);
+	background-size: 36px 1968px;
+	margin-right:1rem;
+}
+	/*Search */
+	.vp-service-hero-text .vp-search-container.active #search-servers {
+	width: 268px;
+	height: 48px;
+	padding: 12px 40px;
+	margin-left: auto;
+	font-size: 1rem;
+}
+
+.vp-service-hero-text .vp-search-container.active .placeholder .default {
+	left: calc(100% - 200px);
+	right: 118px;
+	top: 14px;
+	font-size: .875rem;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+}
+.vp-service-hero-text .vp-search-container.active .placeholder .small{
+	display: none !important;
+}
+/*Footer*/
+.copyright p, .copyright p a {
+	color: #fff;
+}
+ /*Responsive Area*/
+@media all and (max-width: 991px){
+
+h1 {
+	font-size: 3rem;
+}
+.subtitle-1 {
+	font-size: 1.3rem;
+}
+
+/*Search*/
+.vp-service-hero-text .vp-search-container.active .placeholder .default {
+	left: calc(100% - 150px);
+}
+.vp-service-hero-text .vp-search-container.active .search {
+	right: 160px;
+}
+/*Servers Table*/
+ .vp-servers-countries .table .head {
+	font-size: 0.65rem;
+}
+.vp-servers-countries .table .country .toggle .cell {
+	font-size: .7rem;
+}
+.vp-servers-countries .table .cell.first {
+	width: 35%;
+}
+.vp-servers-countries .table .country-name {
+	font-size:.8rem;
+
+}
+
+}
+@media all and (min-width: 767px){
+.vp-servers-countries .table .toggle {
+	display: flex !important;
+}
+ 
+}
+
+@media all and (max-width: 767px){
+		h1 {
+			font-size: 2.25rem;
+		}
+		.vp-service-hero-text .subtitle-1 {
+			display: none;
+		}
+		.vp-service-hero-text .list-wrap {
+			padding: 1rem 0;
+		}
+		/*Search*/
+		.vp-service-hero-text .vp-search-container.active .placeholder .default {
+			left: calc(100% - 85px);
+		}
+		.vp-service-hero-text .vp-search-container.active .search {
+			right: 100px;
+		}
+
+		/*Servers Table*/
+		.vp-servers-countries .table .country {
+			display: block;
+			height: auto;
+		}
+		.vp-servers-countries  .table .country-active{
+			border-radius: 6px;
+			border: solid 1px #e8ebf0;
+			-webkit-box-shadow: 0 8px 16px 0 rgba(34,46,58,.1);
+			box-shadow: 0 8px 16px 0 rgba(34,46,58,.1);
+		}
+		.vp-servers-countries .table-country.cell.first i {
+			display: block;
+		}
+		.vp-servers-countries .table .head {
+			display: none;
+		}
+		.vp-servers-countries .table  .toggle {
+			width: 100%;
+			display: none;
+		}
+		.vp-servers-countries .table .cell {
+			width: 100% !important;
+			height: 56px;
+			padding: 0 16px !important;
+			border-left: 0;
+			justify-content: space-between;
+		}
+		.vp-servers-countries .table .toggle .cell {
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			height: 44px;
+			background-color: rgba(34,46,58,.05);
+			background-position: calc(100% - 16px) center;
+			border-top: 1px solid rgba(34,46,58,.1);
+		}
+		#servers-countries .table .toggle .cell {
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			height: 44px;
+			background-color: rgba(34,46,58,.05);
+			background-position: calc(100% - 16px) center;
+			border-top: 1px solid rgba(34,46,58,.1);
+		}
+		.vp-servers-countries  .table .toggle .cell:nth-child(1)::before {
+			content: 'OpenVPN';
+		}
+		.vp-servers-countries  .table .toggle .cell:nth-child(2)::before {
+			content: 'Wireguard';
+		}
+		.vp-servers-countries  .table .toggle .cell:nth-child(3)::before {
+			content: 'P2P Friendly';
+		}
+		.vp-servers-countries  .table .toggle .cell:nth-child(4)::before {
+			content: 'Private DNS';
+		}
+
+		.vp-servers-countries  .table .toggle .cell:nth-child(5)::before {
+			content: 'Extension support';
+		}
+		.vp-servers-countries .table .toggle .cell::before {
+			width: 160px;
+			text-align: left;
+		}
+
+}
+
+@media all and (max-width: 575px) {
+h1 {
+	font-size: 2rem;
+}
+.list-check p {
+	font-size: .9rem;
+}
+.vp-service-hero-text {
+	padding: 2rem 0;
+}
+
+}
+@media only screen and (max-width: 500px) {
+	.copyright p a{
+		display: block;
+	}
+}
+
+/*Flag Background Positin*/
+
+  /*START EUROP COUNTRY*/
+.flag-al {
+	background-position: 0 -24px;
+}
+.flag-at {
+	background-position: 0 -96px;
+}
+.flag-be {
+	background-position: 0 -192px;
+}
+.flag-ba {
+	background-position: 0 -168px;
+}
+.flag-bg {
+	background-position: 0 -216px;
+}
+.flag-hr {
+	background-position: 0 -816px;
+}
+.flag-cy {
+	background-position: 0 -408px;
+}
+.flag-cz {
+	background-position: 0 -432px;
+}
+.flag-dk {
+	background-position: 0 -480px;
+}
+.flag-ee {
+	background-position: 0 -552px;
+}
+.flag-fi {
+	background-position: 0 -672px;
+}
+.flag-fr {
+	background-position: 0 -696px;
+}
+.flag-de {
+	background-position: 0 -456px;
+}
+.flag-gr {
+	background-position: 0 -768px;
+}
+.flag-hu {
+	background-position: 0 -840px;
+}
+.flag-is {
+	background-position: 0 -1008px;
+}
+.flag-ie {
+	background-position: 0 -888px;
+}
+.flag-it {
+	background-position: 0 -1032px;
+}
+.flag-lv {
+	background-position: 0 -1176px;
+}
+.flag-lu {
+	background-position: 0 -1152px;
+}
+.flag-md {
+	background-position: 0 -1248px;
+}
+.flag-nl {
+	background-position: 0 -1368px;
+}
+.flag-mk {
+	background-position: 0 -1272px;
+}
+.flag-no {
+	background-position: 0 -1392px;
+}
+.flag-pl {
+	background-position: 0 -1512px;
+}
+.flag-pt {
+	background-position: 0 -1536px;
+}
+.flag-ro {
+	background-position: 0 -1608px;
+}
+.flag-ru {
+	background-position: 0 -1656px;
+}
+.flag-rs {
+	background-position: 0 -1632px;
+}
+.flag-sk {
+	background-position: 0 -1752px;
+}
+.flag-si {
+	background-position: 0 -1728px;
+}
+.flag-es {
+	background-position: 0 -600px;
+}
+.flag-se {
+	background-position: 0 -1680px;
+}
+.flag-ch {
+	background-position: 0 -288px;
+}
+.flag-tr {
+	background-position: 0 -1800px;
+}
+.flag-ua {
+	background-position: 0 -1848px;
+}
+.flag-gb {
+	background-position: 0 -720px;
+}
+
+/*END EUROP COUNTRY*/
+
+/*START AMERICA COUNTRY*/ 
+ .flag-ar {
+	background-position: 0 -72px;
+}
+  .flag-br {
+	background-position: 0 -240px;
+}
+.flag-ca {
+	background-position: 0 -264px;
+}
+.flag-ca {
+	background-position: 0 -264px;
+}
+.flag-cl {
+	background-position: 0 -312px;
+}
+.flag-co {
+	background-position: 0 -360px;
+}
+.flag-cr {
+	background-position: 0 -384px;
+}
+.flag-mx {
+	background-position: 0 -1296px;
+}
+.flag-py {
+	background-position: 0 -1560px;
+}
+.flag-us {
+	background-position: 0 -1872px;
+}
+
+/*END AMERICA COUNTRY*/
+
+/*START AFRICA COUNTRY*/
+   
+ .flag-il {
+	background-position: 0 -912px;
+}
+.flag-ng {
+	background-position: 0 -1344px;
+}
+.flag-za {
+	background-position: 0 -1944px;
+}
+.flag-ae {
+	background-position: 0 0;
+}
+
+/*END AFRICA COUNTRY*/
+
+/*START ASIA COUNTRY*/
+ .flag-au {
+	background-position: 0 -120px;
+}
+.flag-hk {
+	background-position: 0 -792px;
+}
+.flag-in {
+	background-position: 0 -936px;
+}
+.flag-id {
+	background-position: 0 -864px;
+}
+.flag-jp {
+	background-position: 0 -1056px;
+}
+.flag-kz {
+	background-position: 0 -1104px;
+}
+.flag-my {
+	background-position: 0 -1320px;
+}
+.flag-nz {
+	background-position: 0 -1440px;
+}
+.flag-ph {
+	background-position: 0 -1464px;
+}
+.flag-sg {
+	background-position: 0 -1704px;
+}
+.flag-kr {
+	background-position: 0 -1080px;
+}
+
+.flag-tw {
+	background-position: 0 -1824px;
+}
+.flag-th {
+	background-position: 0 -1776px;
+}
+.flag-vn {
+	background-position: 0 -1920px;
+}
+
+/*END ASIA COUNTRY*/
+
+
+
+
